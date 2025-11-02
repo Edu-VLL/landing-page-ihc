@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 32px;
+}
+
+body
+{
+    margin: 0;
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Caudex', serif;
+} 
+
+.login{
+    font-size: 24px;
+}
+
+.login-box
+{ 
+    margin: auto; 
+    border-radius: 10px;
+    width: 34vw;
+    height: 67vh;
+    box-shadow: 0 0 1px 0 #bac8da;
+    background-color: #ffffff;
+    padding: 1vw;
+    box-sizing: border-box;    
+}
+
+h1{
+    text-align: center;
+    font-size:  1rem;
+    margin-top: 10vh; 
+}
+
+.login p
+{
+    text-align: center;
+    color: #65758b;
+    font-size: 1em; 
+}
+
+.dsdsd
+{
+    text-align: center;
+}
+.botones
+{
+    display: inline-flex; 
+    width: 95%;
+    background-color: #f1f1f1;
+    border-radius: 13px;  
+    padding: 0.2rem;  
+    margin-top: 1vw; 
+}
+button
+{
+    border: none; 
+    border-radius: 0.5vw; 
+    cursor: pointer;   
+    width: 95%;
+}
+.buton
+{ 
+    padding: 0.5vw 2.1vw; 
+    font-size: 1vw;
+}
+.boton-iniciar
+{
+    background-color: #8fa3c0;
+    color: white;
+}
+.boton-registrar
+{ 
+    color: #65758b;
+}
+.inicio-sesion h2
+{
+    
+    font-size: 1em; 
+    margin: 0;
+    margin-top: 3vw;
+    margin-left: 0.6em;
+}
+.inicio-sesion p{
+    text-align: left; 
+    margin: 0;
+    margin-top: 0.7vw;
+    font-size: 0.5rem;
+    margin-left: 0.8em;
+}
+.espacios
+{
+    font-size: 0.5em;      
+}
+.box{
+    text-align: center;
+}
+input
+{ 
+    width: 94.6%; 
+    border-radius: 7px;
+    padding: 0.8vw;
+    border: none;
+    outline: none;
+    border: 1px solid #e1e1e1; 
+    margin-top: 0.6vw; 
+    box-sizing: border-box;
+}
+label
+{
+    margin: 0;  
+    color: #292f3d;
+    font-size: 0.4rem;
+    font-weight: bolder;
+    margin-left: 1.1em;
+}
+
+.contraseña
+{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 1vw;  
+} 
+.correo
+{
+    margin-top: 2vw;
+}
+.contraseña a
+{
+    margin: 0; 
+    color: #8fa3c0;
+    text-decoration: none;
+}
+.boton-iniciarSesion
+{ 
+    text-align: center;  
+}
+.boton-iniciar-boton
+{
+    padding: 0.3rem;
+    font-size: 1.5em;
+    width: 95%;
+    margin-top: 2vw;
+    background-color: #8fa3c0;
+    color: white;  
+    transition: background-color 0.3s ease; 
+}
+.boton-iniciar-boton:hover
+{
+    background-color: #a9bdda;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 85vw;
+        height: auto;
+        padding: 5vw;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 5vh;
+    }
+}
