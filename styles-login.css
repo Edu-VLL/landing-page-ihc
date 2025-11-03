@@ -10,6 +10,7 @@ body
 {
     margin: 0;
     width: 100%;
+    height: 100%;
     background-color: #fafafa;
     font-family: 'Caudex', serif;
 } 
@@ -22,30 +23,30 @@ body
 { 
     margin: auto; 
     border-radius: 10px;
-    width: 34vw;
-    height: 67vh;
+    width: 34%;  
+    height: 67%; 
     box-shadow: 0 0 1px 0 #bac8da;
     background-color: #ffffff;
-    padding: 1vw;
+    padding: 0.5rem;
     box-sizing: border-box;    
 }
 
 h1{
     text-align: center;
     font-size:  1rem;
-    margin-top: 10vh; 
+    margin-top: 2.35rem; 
 }
 
 .login p
 {
     text-align: center;
     color: #65758b;
-    font-size: 1em; 
+    font-size: 0.87em; 
 }
 
-.dsdsd
+.box-botones
 {
-    text-align: center;
+    text-align: center; 
 }
 .botones
 {
@@ -54,7 +55,7 @@ h1{
     background-color: #f1f1f1;
     border-radius: 13px;  
     padding: 0.2rem;  
-    margin-top: 1vw; 
+    margin-top: 0.5rem;
 }
 button
 {
@@ -65,8 +66,8 @@ button
 }
 .buton
 { 
-    padding: 0.5vw 2.1vw; 
-    font-size: 1vw;
+    padding: 0.24rem 1rem;
+    font-size: 0.47rem; 
 }
 .boton-iniciar
 {
@@ -79,22 +80,21 @@ button
 }
 .inicio-sesion h2
 {
-    
-    font-size: 1em; 
+    font-size: 0.75rem; 
     margin: 0;
-    margin-top: 3vw;
-    margin-left: 0.6em;
+    margin-top: 1.42rem;
+    margin-left: 0.48rem;
 }
 .inicio-sesion p{
     text-align: left; 
     margin: 0;
-    margin-top: 0.7vw;
+    margin-top: 0.36rem;
     font-size: 0.5rem;
-    margin-left: 0.8em;
+    margin-left: 0.43rem;
 }
 .espacios
 {
-    font-size: 0.5em;      
+    font-size: 0.37rem;      
 }
 .box{
     text-align: center;
@@ -103,12 +103,17 @@ input
 { 
     width: 94.6%; 
     border-radius: 7px;
-    padding: 0.8vw;
+    padding:0.38rem 0.38rem 0.38rem 1.25rem;
     border: none;
     outline: none;
     border: 1px solid #e1e1e1; 
-    margin-top: 0.6vw; 
+    margin-top: 0.3rem; 
     box-sizing: border-box;
+}
+input:focus
+{ 
+    outline: 3px solid #8fa3c0;
+    outline-offset: 2px;
 }
 label
 {
@@ -116,25 +121,40 @@ label
     color: #292f3d;
     font-size: 0.4rem;
     font-weight: bolder;
-    margin-left: 1.1em;
+    margin-left: 0.42rem;
 }
-
+.formulario
+{
+    position: relative;
+}
+i
+{
+    position: absolute;
+    left: 0.68rem;
+    top: 44%; 
+    color: #8fa3c0; 
+    font-size: 0.5rem;
+}
+.correo
+{
+    margin-top: 0.96rem;
+}
 .contraseña
 {
     display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    margin-top: 1vw;  
+    justify-content: space-between;  
+    margin-top: 0.45rem;  
 } 
-.correo
-{
-    margin-top: 2vw;
-}
 .contraseña a
 {
     margin: 0; 
     color: #8fa3c0;
     text-decoration: none;
+    margin-right: 0.6rem;
+}
+.contraseña a:hover
+{
+    text-decoration: underline;
 }
 .boton-iniciarSesion
 { 
@@ -143,9 +163,9 @@ label
 .boton-iniciar-boton
 {
     padding: 0.3rem;
-    font-size: 1.5em;
+    font-size: 0.56rem;
     width: 95%;
-    margin-top: 2vw;
+    margin-top: 1rem;
     background-color: #8fa3c0;
     color: white;  
     transition: background-color 0.3s ease; 
@@ -155,16 +175,16 @@ label
     background-color: #a9bdda;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .login-box {
         width: 85vw;
         height: auto;
         padding: 5vw;
-    }
-
+    } 
+     
     button {
         font-size: 4vw;
-        padding: 2vw;
+        padding: 2vw; 
     }
 
     h1 {
