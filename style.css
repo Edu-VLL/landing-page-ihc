@@ -1,57 +1,60 @@
-/*HEADER*/
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', 'Arial', sans-serif;
     color: #222;
-    margin: 0;
-    padding: 0;
 }
+
 
 .encabezado {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    padding: 12px 60px; 
+    align-items: center;
+    padding: 0.75rem 4rem;
     background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #ddd;
     position: fixed;
+    top: 0;
+    width: 91%;
     z-index: 20;
-    width: 92.1%; 
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .texto-logo h1 {
-    font-size: 20px;
+    font-size: 1.23rem;
     margin: 0;
     font-weight: 600;
 }
 
 .texto-logo p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #666;
     margin: 0;
 }
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .menu a {
     text-decoration: none;
     color: #222;
-    font-weight: 500; 
+    font-weight: 500;
     transition: color 0.2s;
 }
 
@@ -62,7 +65,7 @@ body {
 .acciones {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .btn-login {
@@ -70,8 +73,8 @@ body {
     color: black;
     border: none;
     border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -85,19 +88,19 @@ body {
     background-color: #93B0C5;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 0.7rem 1.3rem;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 
-/*MAIN*/
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 100px;
+    padding: 7rem 10% 5rem;
     gap: 60px;
 }
 
@@ -108,11 +111,11 @@ body {
 
 .hero-texto h1 {
     font-family: 'Caudex', serif;
-    font-size: 58px;
+    font-size: 3.62rem;
     line-height: 1.2;
     color: #1e293b;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 .hero-texto h1 span {
@@ -121,18 +124,16 @@ body {
     font-weight: 700;
 }
 
-
 .hero-texto p {
-    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: #475569;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .hero-botones {
     display: flex;
-    gap: 20px;
+    gap: 1.3rem;
 }
 
 .btn-primario {
@@ -140,8 +141,8 @@ body {
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 12px 28px;
-    font-size: 16px;
+    padding: 0.8rem 1.75rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -156,8 +157,8 @@ body {
     color: #334155;
     border: 2px solid #93B0C5;
     border-radius: 8px;
-    padding: 12px 28px;
-    font-size: 16px;
+    padding: 0.8rem 1.75rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -168,32 +169,45 @@ body {
     color: white;
 }
 
+.datos {
+    display: flex;
+    justify-content: space-between;
+    width: 21.1rem;
+    margin-top: 2rem;
+}
+
+.datos p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
 .hero-imagen img {
-    width: 520px;
+    width: 34vw;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+
 /*FOOTER*/
 .footer {
     background-color: #fafbfc;
-    padding: 60px 120px 20px;
+    padding: 6rem 8rem 1.3rem;
     font-family: 'Poppins', sans-serif;
     color: #334155;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .footer-col h4 {
     font-family: 'Caudex', serif;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
     color: #000;
 }
 
@@ -203,7 +217,7 @@ body {
 }
 
 .footer-col ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
 }
 
 .footer-col ul li a {
@@ -219,7 +233,7 @@ body {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.8rem;
 }
 
 .footer-logo img {
@@ -229,21 +243,21 @@ body {
 
 .footer-logo .logo {
     font-family: 'Caudex', serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #1e293b;
     margin: 0;
 }
 
 .footer-logo .slogan {
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #64748b;
     margin: 0;
 }
 
 .footer-col.marca .descripcion {
-    margin-top: 16px;
+    margin-top: 1rem;
     max-width: 300px;
-    font-size: 15px;
+    font-size: 0.8rem;
     color: #64748b;
     line-height: 1.5;
 }
@@ -251,180 +265,143 @@ body {
 .footer hr {
     border: none;
     border-top: 1px solid #e2e8f0;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-copy {
     text-align: center;
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #64748b;
 }
 
-/*SECTION*/
-.section
-{                       /*fafbfc - fafbfc*/
+.container {
     background-color: #fafbfc;
-    text-align: center; 
-    color: #000;  
-    padding-top: 31px;
-    padding-bottom: 63px;
-}
-.section-texto h2
-{ 
+    padding: 2.5rem 5rem;
+    text-align: center;
     font-family: 'Caudex', serif;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 50px; 
-    line-height: 1; 
 }
 
-.section-texto p{
-    color: #666;
-    font-family: 30px;  
-}
-.section-segmento
-{  
-    font-family: 'Caudex', serif;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;       
-    justify-content: center;
-    gap: 250px; 
-    list-style-type: none;   
-    margin-top: 42px;  
-}
-.section-artistas
-{ 
-    color: hsl(206 28% 65%);
-    line-height: 1.8;
-    margin-right: 75px;
-}
-.section-clientes
-{
-    color: hsl(148 25% 70%);
-    line-height: 1.8; 
-    margin-right: 85px; 
-}
-.section .section-artistas p{
-    font-size: 17px;
-    color: #666; 
-    margin: 0;
-    margin-right: 8px;
-}
-.section .section-clientes p{
-    font-size: 17px;
-    color: #666; 
-    margin: 0;
-    margin-right: 8px;
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-/**/
-.section-opciones
-{
-    display: flex;
-    justify-content: space-between;  
-    margin-top:  -37px;
-    padding: 0 125px;  
-    text-align: left; 
-}
-.section-opciones li{
-    font-family: 'Caudex', serif;
-    list-style-type: none;
-    font-size: 20px; 
-    margin: 0;
-    line-height: 50px;  
-    border-radius: 10px; 
-}
-.section-opciones-artistas li
-{   
-    border: 1px solid hsl(206 28% 65%);
-    margin-top: 25px;  
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #64748b;
 }
 
-.section-opciones-artistas-logo{
-    display: flex;
-}
 
-.section-opciones-artistas-logo i{
-    
-    font-size: 26px;    
-    margin-left: 20px;
-    margin-top: 22px; 
-    color: hsl(206 28% 65%); 
-    border-radius: 50px;
-    padding: 10px;
-    background-color: #eeeff0;
-}
-
-.section-opciones h4
-{  
-    margin: 0;
-    margin-top: 21px;
-    margin-left: 20px;
-}
-
-.title-artistas p{
-    color: #666; 
-    position: relative; 
-    right: 50px;  
-    bottom: 11px; 
-    margin: 0;
-    margin-top: 20px;
-}
-
-/*CLIENTES*/
-.section-opciones-clientes li
-{   
-    border: 1px solid hsl(148 25% 70%);
-    margin-top: 25px;   
-    margin-right: 80px;
-}
-
-.section-opciones-clientes-logo
-{
-    display: flex;
-}
-
-.section-opciones-clientes-logo i{
-    
-    font-size: 26px;    
-    margin-left: 20px;
-    margin-top: 22px; 
-    color: hsl(148 25% 70%);
-    border-radius: 50px;
-    padding: 10px;
-    background-color: #eeeff0;
-}
-
-.title-clientes p{
-    color: #666; 
-    position: relative; 
-    right: 50px;
-    bottom: 11px; 
-    margin: 0;
-    margin-top: 20px; 
-    margin-right: 55px;
-}
-
-/*Por qué elegir ArteMatch*/
-.por_que {
-    display:flex;
-    flex-direction: column;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: center;
     align-items: center;
-    padding: 0 100px;
-    padding-top: 23px;
-    padding-bottom: 82px; 
+    gap: 2.5rem;
+}
+
+.column-Artistas .column-title {
+    font-size: 1.6rem;
+    color: #64748b;
+
+}
+
+.column-clientes .column-title {
+    font-size: 1.6rem;
+    color: #677b62;
+}
+
+.column-subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.8rem;
+}
+
+.card {
+    border: 2px solid #c8d2db;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 1.2rem;
+    background: #fff;
+}
+
+.card-green {
+    border-color: #b7d8c0;
+    background: #f8fff8;
+}
+
+.blue i {
+    padding: 0.6rem 0.4rem;
+    background-color: #d2dded;
+    color: #47576e;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.blue i:hover {
+    border: 1px solid #64748b;
+    box-shadow: 0 0 30px #dbdee0;
+}
+
+.blue:hover i {
+    background-color: #47576e;
+    color: #ffffff;
+    padding: 0.7rem 0.5rem;
+}
+
+.gree i {
+    padding: 0.6rem 0.4rem;
+    background-color: #b7d8c0;
+    color: #5b7562;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+
+}
+
+.gree i:hover {
+    border: 1px solid #b7d8c0;
+    box-shadow: 0 0 30px #dbdee0;
+}
+
+.gree:hover i {
+    background-color: #5b7562;
+    color: #ffffff;
+    padding: 0.7rem 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0;
+    color: #555;
+}
+
+
+.por_que {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5rem 0;
 }
 
 .por_que h2 {
     font-family: 'Caudex', serif;
-    font-size: 58px;
+    padding: 0.5rem;
+    font-size: 3rem;
     line-height: 1.2;
     color: #000;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 0.6rem;
 }
 
 .por_que span {
@@ -432,9 +409,9 @@ body {
 }
 
 .por_que p {
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    margin-bottom: 70px;
+    margin-bottom: 3.5rem;
     color: #64748b;
 }
 
@@ -442,20 +419,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 60px;
-
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    margin-bottom: 3.5rem;
 }
 
 .por_que-container {
     position: relative;
     border: 1px solid #000;
     border-color: rgb(241, 239, 239);
-    border-radius: 10%;
+    border-radius: 15px;
     text-align: center;
-    width: 340px;
-    height: 180px;
     transition: all 0.5s ease;
+    width: 12rem;
+    height: 13rem;
+    padding: 1rem;
 }
 
 .por_que-container:hover {
@@ -467,80 +445,418 @@ body {
 
 .por_que-container h3 {
     font-family: 'Caudex', serif;
-    margin-top: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .por_que-container p {
-font-size: 12px;
-color: #64748b;
-font-weight: 500;
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
 }
 
-.icono {
+.iconos {
     width: 70px;
     height: 70px;
-    margin-bottom: 1px;
 }
 
 .por_que-images {
-    display:flex;
-    justify-content:center;
-    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .img-container {
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
     position: relative;
-    background-color: #000;
-    transform: translate(-300px);
+    width: 35%;
+    border-radius: 20px;
     overflow: hidden;
-    transform: translate(0px);
-    z-index: 10;
 }
 
-.img-container img{
-    border-radius: 20px;
-    transition: all 0.5s ease;
-    object-fit: cover;
+.img-container img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     display: block;
+    border-radius: 20px;
     filter: brightness(0.9);
+    transition: 0.4s;
 }
 
 .img-container img:hover {
     transform: scale(1.1);
 }
 
-
 .title-image {
-position: absolute;
-top: 70%;
-left: 25%;
-transform: translate(-50%,-50%);
-font-family: "Caudex", serif;
-font-size: 25px;
-font-weight:bolder;
-color: white;
+    position: absolute;
+    bottom: 70px;
+    left: 25px;
+    font-family: "Caudex", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
 }
 
 .text-image {
     position: absolute;
-    top:80%;
-    left: 70%;
-    transform: translate(-50%,-50%);
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight:400;
+    bottom: 25px;
+    left: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
     color: white;
-    width: 600px;
+    max-width: 80%;
 }
 
-.listo-para { 
+.beneficiarios {
+    background-color: #fafbfc;
+    font-family: 'Caudex', serif;
+}
+
+.beneficios {
+    text-align: center;
+    font-family: 'Caudex', serif;
+    padding: 0.1rem;
+}
+
+.beneficios h2 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+.beneficios p {
+    font-size: 1.5rem;
+    color: #64748b;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0 10px;
+}
+
+.beneficios-clientes-artistas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 10rem 6rem 10rem;
+    margin-top: 2rem;
+}
+
+.card {
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border: 1px solid #64748b;
+    box-shadow: 0 0 30px #dbdee0;
+}
+
+.card .Be {
+    padding: 0.6rem 0.4rem;
+    background-color: #d2dded;
+    color: #47576e;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.card:hover .Be {
+    background-color: #47576e;
+    color: #ffffff;
+    padding: 0.7rem 0.5rem;
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+}
+
+.card p {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.testimonios {
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+
+.testimonios h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-family: 'Caudex', serif;
+}
+
+.testimonios .sub {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.test-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.test-card {
+    width: 330px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 2px solid transparent;
+    transition: .3s ease;
+    text-align: left;
+}
+
+.test-card:hover {
+    border-color: #47576e;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.estrellas {
+    color: #f7c531;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.test-card .texto {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.test-card .textito {
+    margin-bottom: 50px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.user img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.user h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #111;
+}
+
+.user span {
+    font-size: 14px;
+    color: #777;
+}
+
+
+.dudas {
+    text-align: center;
+    padding: 40px 0 70px 0;
+    background-color: #fafbfc;
+}
+
+.dudas .tag {
+    background: #e6f7f3;
+    padding: 6px 16px;
+    border-radius: 20px;
+    color: #42a58a;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dudas h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-family: 'Caudex', serif;
+}
+
+.dudas .sub {
+    color: #47576e;
+    font-size: 16px;
+    margin: 30px 0 50px 0;
+}
+
+.dudas-container {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+details {
+    border-bottom: 2px solid #ddd;
+    padding: 18px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+details:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after {
+    content: "⌄";
+    font-size: 22px;
+    transition: transform .3s ease;
+}
+
+/* Rotar flecha al abrir */
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details p {
+    padding: 10px 0 15px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fade .3s ease;
+}
+
+.seccion-contacto {
+    padding: 2rem 0 7rem 0;
+}
+
+.contacto-box {
+    margin: auto;
+    border-radius: 10px;
+    width: 45%;
+    height: 67%;
+    box-shadow: 0 0 1px 0 #bac8da;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 50px rgb(216, 216, 216);
+}
+
+.seccion-contacto h2 {
+    font-family: "Caudex", serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.seccion-contacto p {
+    text-align: center;
+    color: #65758b;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.espacios {
+    font-size: 0.74rem;
+}
+
+.box {
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 94.6%;
+    border-radius: 7px;
+    padding: 0.76rem;
+    border: none;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    margin-top: 0.6rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 3px solid #8fa3c0;
+    outline-offset: 2px;
+}
+
+label {
+    margin: 0;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-left: 0.82rem;
+    font-family: "Caudex", serif;
+}
+
+.formulario {
+    position: relative;
+}
+
+.nombreCompleto {
+    margin-top: 1.2rem;
+}
+
+.correo {
+    margin-top: 1.5rem;
+}
+
+.boton-iniciarSesion {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mensaje {
+    margin-top: 1.9rem;
+}
+
+textarea {
+    min-width: 94.6%;
+    resize: none;
+    min-height: 60px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.boton-iniciar-boton {
+    padding: 0.6rem;
+    font-size: 1.12rem;
+    width: 95%;
+    margin-top: 2rem;
+    background-color: #8fa3c0;
+    color: white;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.boton-iniciar-boton:hover {
+    background-color: #a9bdda;
+}
+
+
+.listo-para {
     background-color: #f5f5f5;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -558,8 +874,7 @@ color: white;
 }
 
 .listo-para p {
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
-    
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin-bottom: 70px;
     color: #64748b;
@@ -568,8 +883,8 @@ color: white;
 .listo-para-botones {
     display: flex;
     gap: 100px;
+    flex-wrap: wrap;
 }
-
 
 .listo-para-boton-registro {
     background-image: none;
@@ -588,17 +903,14 @@ color: white;
     background-image: none;
     background-color: white;
     color: rgb(155, 201, 155);
-    border-color:  rgb(155, 201, 155);
+    border-color: rgb(155, 201, 155);
     border-width: 1px;
     border-radius: 8px;
     padding: 10px 50px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
-
 }
-
 
 .listo-para-boton-registro:hover {
     background-color: #7a9bb1;
@@ -607,4 +919,167 @@ color: white;
 .listo-para-boton-Buscar:hover {
     color: white;
     background-color: #deecde;
+}
+
+/**/
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    width: 85%;
+    max-width: 350px;
+    padding: 1.8rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.3s ease;
+}
+
+.modal-content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: "Caudex", serif;
+}
+
+.modal-content p {
+    color: #65758b;
+    margin: 0.7rem 0 1.5rem;
+    font-size: 0.9rem;
+}
+
+.modal-content button {
+    background: #8fa3c0;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-content button:hover {
+    background: #a9bdda;
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/**/
+
+@media (max-width: 1100px) {
+    .contacto-box {
+        width: 85vw;
+        height: auto;
+        padding: 5vw;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin-top: 5vh;
+    }
+}
+
+/*Tablets y pantallas medianas*/
+@media (max-width: 900px) {
+    .encabezado {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .acciones {
+        gap: 0.5rem;
+    }
+
+    .btn-login,
+    .btn-unete {
+        padding: 0.55rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 6rem 1.5rem 3rem;
+        gap: 30px;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    .datos {
+        justify-content: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+}
+
+/*PRUEBA*/
+@media (max-width: 700px) {
+    .encabezado {
+        display: none;
+    }
+
+}
+
+/*Celulares pequeños*/
+@media (max-width: 480px) {
+
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .btn-primario,
+    .btn-secundario {
+        width: 100%;
+        padding: 0.9rem;
+    }
+
+    .datos {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
 }

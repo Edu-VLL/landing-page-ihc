@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -28,185 +29,391 @@
 
         <nav class="menu">
             <a href="#">Cómo funciona</a>
-            <a href="#">Para Artistas</a>
-            <a href="#">Para Clientes</a>
+            <a href="#">Beneficios</a>
         </nav>
 
         <div class="acciones">
-            <button class="btn-login">Iniciar Sesión</button>
-            <button class="btn-unete">Únete Ahora</button>
+            <button class="btn-login" id="btnLogin">Iniciar Sesión</button>
+            <script>
+                document.getElementById("btnLogin").addEventListener("click", function () {
+                    window.location.href = "/registro.html";
+                });
+            </script>
+            <button class="btn-unete" id="btnUnete">Únete Ahora</button>
+            <script>
+                document.getElementById("btnUnete").addEventListener("click", function () {
+                    window.location.href = "/registro.html";
+                });
+            </script>
         </div>
     </header>
 
-    <main class="hero">
+    <main id="main-hero" class="hero">
         <div class="hero-texto">
             <h1>
                 Conecta tu talento con
                 <span>oportunidades únicas</span>
             </h1>
-            <p>
+            <p class="parrafo">
                 ArteMatch une a artistas independientes con clientes que buscan servicios creativos.
                 Descubre talento excepcional o muestra tu arte al mundo.
             </p>
             <div class="hero-botones">
-                <button class="btn-primario">Soy Artista</button>
-                <button class="btn-secundario">Busco un Artista</button>
+                <button class="btn-primario" id="btnSoyArtista">Soy Artista</button>
+                <script>
+                    document.getElementById("btnSoyArtista").addEventListener("click", function () {
+                        window.location.href = "/registro.html";
+                    });
+                </script>
+                <button class="btn-secundario" id="btnBuscoArtista">Busco un Artista</button>
+                <script>
+                    document.getElementById("btnBuscoArtista").addEventListener("click", function () {
+                        window.location.href = "/registro.html";
+                    });
+                </script>
+            </div>
+            <div class="datos">
+                <p>+5,000 arrtistas</p>
+                <p>+50,000 obras</p>
+                <p>100% seguro</p>
             </div>
         </div>
 
         <div class="hero-imagen">
             <img src="imagenes/img1.jpg" alt="Imagen de ArteMatch">
-        </div>         
+        </div>
+
     </main>
 
-    <section class="section">
-        <div class="section-texto">            
-            <h2>¿Cómo funciona?</h2>
-            <p>Conectamos talento artístico con oportunidades en solo unos pasos</p>   
-        </div> 
-        <div class="section-segmento">
-            <h3 class="section-artistas">Para Artistas
-                <p>Muestra tu trabajo y encuentra clientes</p>
-            </h3>            
-            <h3 class="section-clientes">Para Clientes
-                <p>Encuentra el artista perfecto</p>
-            </h3>
-        </div>
-        
-        <div class="section-opciones">
-            <ul class="section-opciones-artistas">
-                <li>
-                    <div class="section-opciones-artistas-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                        </div>
-                        <div class="title-artistas"> 
-                            <h4>Crea tu portafolio</h4>
-                            <p>Sube fotos de tus obras y organiza tu galería persona</p>
-                        </div>
-                    </div>
-                </li>
 
-                <li>
-                    <div class="section-opciones-artistas-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-regular fa-message"></i>
-                        </div>
-                        <div class="title-artistas"> 
-                            <h4>Recibe solicitudes</h4>
-                            <p>Los clientes te contactan directamente por proyectos</p>
-                        </div>
-                    </div>
-                </li>
+    <section class="container" id="comoFunciona">
+        <h1 class="title">¿Cómo funciona?</h1>
+        <p class="subtitle">Conectamos talento artístico con oportunidades en solo unos pasos</p>
 
-                <li>
-                    <div class="section-opciones-artistas-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-regular fa-circle-check"></i>
-                        </div>
-                        <div class="title-artistas"> 
-                            <h4>Trabaja y crece</h4>
-                            <p>Realiza proyectos y construye tu reputación</p>
-                        </div>
-                    </div>
-                </li>
-            </ul> 
-            <!--/////////////////////-->
-            <ul class="section-opciones-clientes">
-                <li>
-                    <div class="section-opciones-clientes-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="title-clientes"> 
-                            <h4>Busca artistas</h4>
-                            <p>Filtra por estilo, ubicación y precio</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="section-opciones-clientes-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-regular fa-message"></i>
-                        </div>
-                        <div class="title-clientes"> 
-                            <h4>Conecta</h4>
-                            <p>Envía mensajes y solicitudes de presupuesto</p>
-                        </div>
-                    </div>
-                </li>
+        <div class="grid">
+            <!-- Columna Artistas -->
+            <div class="column-Artistas">
+                <h2 class="column-title">Para Artistas</h2>
+                <p class="column-subtitle">Muestra tu trabajo y encuentra clientes</p>
 
-                <li>
-                    <div class="section-opciones-clientes-logo">
-                        <div class="logotipo"> 
-                            <i class="fa-regular fa-circle-check"></i>
-                        </div>
-                        <div class="title-clientes"> 
-                            <h4>Contrata</h4>
-                            <p>Trabaja con el artista perfecto para tu proyecto</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                <div class="blue card">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <h3>Crea tu portafolio</h3>
+                    <p>Sube fotos de tus obras y organiza tu galería personal</p>
+                </div>
+
+                <div class="blue card">
+                    <i class="fa-solid fa-message"></i>
+                    <h3>Recibe solicitudes</h3>
+                    <p>Los clientes te contactan directamente por proyectos</p>
+                </div>
+
+                <div class="blue card">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Trabaja y crece</h3>
+                    <p>Realiza proyectos y construye tu reputación</p>
+                </div>
+            </div>
+
+            <!-- Columna Clientes -->
+            <div class="column-clientes">
+                <h2 class="column-title">Para Clientes</h2>
+                <p class="column-subtitle">Encuentra el artista perfecto</p>
+
+                <div class="gree card card-green">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Busca artistas</h3>
+                    <p>Filtra por estilo, ubicación y precio</p>
+                </div>
+
+                <div class="gree card card-green">
+                    <i class="fa-solid fa-message"></i>
+                    <h3>Conecta</h3>
+                    <p>Envía mensajes y solicitudes de presupuesto</p>
+                </div>
+
+                <div class="gree card card-green">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Contrata</h3>
+                    <p>Trabaja con el artista perfecto para tu proyecto</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="por_que">
-            <h2>¿Por qué elegir <span>ArteMatch</span>?</h2>
-            <p>La plataforma que hace que conectar sea simple y efectivo</p>
+    <section id="Por-que-elegir-Artematch" class="por_que">
+        <h2>¿Por qué elegir <span>ArteMatch?</span></h2>
+        <p>La plataforma que hace que conectar sea simple y efectivo</p>
 
-            <div class="list-container">
-                <div class="por_que-container">
-                    <img class="icono" src="imagenes/logo-seguridad.jpg" alt="logo-seguridad">
-                    <h3>Conexiones confiables</h3>
-                    <p>Perfiles verificados y sistema de<br>reseñas</p>  
-                </div>
+        <div class="list-container">
+            <div class="por_que-container">
+                <img class="iconos" src="imagenes/logo-seguridad.jpg" alt="logo-seguridad">
+                <h3>Conexiones confiables</h3>
+                <p>Perfiles verificados y sistema de<br>reseñas</p>
+            </div>
+            <div class="por_que-container">
+                <img class="iconos" src="imagenes/logo-impulso.jpg" alt="logo-impulso">
+                <h3>Crece tu negocio</h3>
+                <p>Aumenta tu visibilidad y encuentra más <br>clientes</p>
+            </div>
+            <div class="por_que-container">
+                <img class="iconos" src="imagenes/logo-comunidad.jpg" alt="logo-comunidad">
+                <h3>Comunidad activa</h3>
+                <p>Miles de artistas y clientes <br>conectándose cada día</p>
+            </div>
+            <div class="por_que-container">
+                <img class="iconos" src="imagenes/logo-estrella.jpg" alt="logo-estrella">
+                <h3>Fácil de usar</h3>
+                <p>Interfaz intuitiva diseñada para <br>creativos</p>
+            </div>
+        </div>
 
-                <div class="por_que-container">
-                    <img class="icono" src="imagenes/logo-impulso.jpg" alt="logo-impulso">
-                    <h3>Crece tu negocio</h3>
-                    <p>Aumenta tu visibilidad y encuentra más <br>clientes</p>
-                </div>
+        <div class="por_que-images">
 
-                <div class="por_que-container">
-                    <img class="icono" src="imagenes/logo-comunidad.jpg" alt="logo-comunidad">
-                    <h3>Comunidad activa</h3>
-                    <p>Miles de artistas y clientes <br>conectándose cada día</p>
-                </div>
-
-                <div class="por_que-container">
-                    <img class="icono" src="imagenes/logo-estrella.jpg" alt="logo-estrella">
-                    <h3>Fácil de usar</h3>
-                    <p>Interfaz intuitiva diseñada para <br>creativos</p>
-                </div>
+            <div class="img-container">
+                <img src="imagenes/artist-work.jpg" alt="artist-work">
+                <div class="title-image">Para Artistas</div>
+                <div class="text-image">Muestra tu arte, encuentra oportunidades</div>
             </div>
 
-            <div class="por_que-images">
-
-                <div class="img-container">
-                    <img src="imagenes/artist-work.jpg" alt="artist-work">
-                    <div class="title-image">Para Artistas</div>
-                    <div class="text-image">Muestra tu arte, encuentra oportunidades</div>
-                </div>
-
-                <div class="img-container">
-                    <img src="imagenes/client-artist.jpg" alt="client-artist">
-                    <div class="title-image">Para Clientes</div>
-                    <div class="text-image">Descubre talento, contrata con confianza</div>
-                </div>
-                
+            <div class="img-container">
+                <img src="imagenes/client-artist.jpg" alt="client-artist">
+                <div class="title-image">Para Clientes</div>
+                <div class="text-image">Descubre talento, contrata con confianza</div>
             </div>
-                
+
+        </div>
+
     </section>
 
-        <section class="listo-para">
-            <h2>¿Listo para comenzar?</h2>
-            <p>Únete a cientos de artistas y clientes que ya están conectando y creando <br>proyectos increíbles</p>
-            <div class="listo-para-botones">
-                <button class="listo-para-boton-registro">Registrarse como Artista</button>
-                <button class="listo-para-boton-Buscar">Buscar Artista</button>
+    <section id="NuestrosBeneficios" class="beneficiarios">
+        <div class="beneficios">
+            <h2>Beneficios</h2>
+            <p>Beneficios para artistas como para clientes</p>
+        </div>
+        <div class="beneficios-clientes-artistas">
+            <div class="card">
+                <i class="Be fa-solid fa-globe"></i>
+                <h3>Alcance global</h3>
+                <p>Tu arte visible para miles de potenciales compradores en todo el mundo.</p>
             </div>
-        </section> 
+            <div class="card">
+                <i class="Be fa-solid fa-chart-line"></i>
+                <h3>Estadísticas detalladas</h3>
+                <p>Analiza visitas, likes, ventas y tendencias para optimizar tu estrategia.</p>
+            </div>
+
+            <div class="card">
+                <i class="Be fa-solid fa-palette"></i>
+                <h3>Galería profesional</h3>
+                <p>Muestra tu portfolio con calidad de galería. Imágenes HD y videos.</p>
+            </div>
+
+            <div class="card">
+                <i class="Be fa-solid fa-message"></i>
+                <h3>Comunicación directa</h3>
+                <p>Chat integrado para negociar comisiones y responder preguntas.</p>
+            </div>
+
+            <div class="card">
+                <i class="Be fa-solid fa-shield-halved"></i>
+                <h3>Pagos seguros</h3>
+                <p>Recibe tus pagos de forma rápida y segura. Sin sorpresas.</p>
+            </div>
+
+            <div class="card">
+                <i class="Be fa-solid fa-bolt"></i>
+                <h3>Promoción inteligente</h3>
+                <p>IA que recomienda tu arte a los clientes perfectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Resenias" class="testimonios">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <p class="sub">Miles de artistas y coleccionistas confían en ArteMatch</p>
+        <div class="test-container">
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto">
+                    "ArteMatch ha transformado mi forma de descubrir arte.
+                    He encontrado piezas únicas de artistas emergentes que jamás habría conocido de otra manera."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil2.png" alt="Laura">
+                    <div>
+                        <h4>Laura Sánchez</h4>
+                        <span>Coleccionista de arte</span>
+                    </div>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto">
+                    "Como artista, esta plataforma me ha permitido alcanzar una audiencia global.
+                    Las ventas han aumentado un 300% desde que me uní."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil1.png" alt="Pablo">
+                    <div>
+                        <h4>Pablo Fernández</h4>
+                        <span>Artista profesional</span>
+                    </div>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto textito">
+                    "La mejor plataforma para conectar con nuevos talentos.
+                    La calidad de los artistas y la facilidad de uso son incomparables."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil3.png" alt="Isabel">
+                    <div>
+                        <h4>Isabel Torres</h4>
+                        <span>Galerista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dudas">
+        <h2>¿Tienes dudas?</h2>
+        <p class="sub">Aquí encontrarás respuestas a las preguntas más comunes</p>
+        <div class="dudas-container">
+
+            <details>
+                <summary>¿Cómo funciona el proceso de compra?</summary>
+                <p>El proceso es simple y seguro. Selecciona la obra que te interesa, añádela al carrito y procede al
+                    pago. Usamos sistemas de pago seguros con encriptación SSL. Una vez confirmado el pago, el artista
+                    prepara el envío y recibes un código de seguimiento.</p>
+            </details>
+
+            <details>
+                <summary>¿Qué comisión cobra ArteMatch?</summary>
+                <p>ArteMatch cobra una comisión del 5% sobre cada venta. Esta comisión cubre los costes de la
+                    plataforma, procesamiento de pagos, soporte al cliente y marketing para promocionar a nuestros
+                    artistas.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo verifican la autenticidad de las obras?</summary>
+                <p>Cada artista pasa por un proceso de verificación de identidad. Todas las obras incluyen certificado
+                    de autenticidad digital. Además, nuestro equipo revisa cada publicación para asegurar que cumple con
+                    nuestros estándares de calidad.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo devolver una obra si no me gusta?</summary>
+                <p>Sí, ofrecemos una garantía de devolución de 2 días. Si la obra no cumple tus expectativas, puedes
+                    devolverla en su estado original y recibir un reembolso completo. Los gastos de envío de devolución
+                    corren por cuenta del comprador.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo puedo contactar con un artista?</summary>
+                <p>Una vez registrado, puedes enviar mensajes directos a cualquier artista a través de nuestro sistema
+                    de mensajería integrado. También puedes solicitar obras personalizadas o hacer preguntas sobre
+                    técnicas y dimensiones.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <section class="seccion-contacto">
+        <h2>¿Necesidas ayuda?</h2>
+        <p>Estamos aquí para responder tus preguntas</p>
+
+        <div class="contacto-box">
+            <form class="formulario" id="contactoForm">
+
+                <div class="espacios">
+                    <div class="nombreCompleto">
+                        <label>Nombre completo</label>
+                    </div>
+                    <div class="box box-nombre">
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="correo">
+                        <label>Correo electrónico</label>
+                    </div>
+                    <div class="box box-correo">
+                        <input type="email" id="email" placeholder="tu@email">
+                    </div>
+
+                    <div class="mensaje">
+                        <label>Mensaje</label>
+                    </div>
+                    <div class="box box-mensaje">
+                        <textarea id="mensaje" rows="8" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                    </div>
+
+                    <div class="boton-iniciarSesion">
+                        <button class="boton-iniciar-boton" type="submit">Enviar Mensaje</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!-- MODAL BONITA -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Mensaje enviado</h3>
+                <p>Gracias por contactarnos. Te responderemos pronto.</p>
+                <button id="cerrarModal">Cerrar</button>
+            </div>
+        </div>
+
+        <script>
+            const form = document.getElementById('contactoForm');
+            const modal = document.getElementById('modal');
+            const cerrarModal = document.getElementById('cerrarModal');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Mostrar modal
+                modal.style.display = "flex";
+
+                // Limpiar formulario
+                form.reset();
+            });
+
+            cerrarModal.addEventListener('click', () => {
+                modal.style.display = "none";
+            });
+
+            // Cerrar si hace click fuera de la ventana
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+
+    </section>
+
+
+    <section class="listo-para">
+        <h2>¿Listo para comenzar?</h2>
+        <p>Únete a cientos de artistas y clientes que ya están conectando y creando <br>proyectos increíbles</p>
+        <div class="listo-para-botones">
+            <button class="listo-para-boton-registro" id="registrar">Registrarse como Artista</button>
+            <script>
+                document.getElementById("registrar").addEventListener("click", function () {
+                    window.location.href = "/registro.html";
+                });
+            </script>
+            <button class="listo-para-boton-Buscar" id="buscarAr">Buscar Artista</button>
+            <script>
+                document.getElementById("buscarAr").addEventListener("click", function () {
+                    window.location.href = "/registro.html";
+                });
+            </script>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
@@ -252,7 +459,7 @@
         <hr>
 
         <div class="footer-copy">
-            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+            <p>© 2025 ArteMatch. Todos los derechos reservados.</p>
         </div>
     </footer>
 
